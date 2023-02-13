@@ -1,6 +1,6 @@
 {
   "name": "ts-config-merger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "bin": {
     "ts-config-merger": "./dist/index.js"
   },
