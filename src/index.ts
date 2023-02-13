@@ -63,7 +63,7 @@ const generateFiles = (configFilePath: string = "./config.json", outputFolderPat
     const target: Record<string, any> = {};
 
     for (const sourceFileName of config[fileName]) {
-      const source: Record<string, any> = require(sourceFileName);
+      const source: Record<string, any> = require(resolve(sourceFileName));
       mergeObjects(target, source);
     }
 
